@@ -19,15 +19,15 @@ const lockScreenStyles = `
     <style id="birthday-lock-screen">
       .staticrypt-body {
         min-height: 100%;
-        background-color: #55613a;
+        background-color: #ffffff;
         background-image:
           linear-gradient(rgba(18, 12, 10, 0.2), rgba(18, 12, 10, 0.48)),
           url("data:image/jpeg;base64,${coverImage.toString("base64")}");
-        background-position: center 9%;
+        background-position: center top;
         background-repeat: no-repeat;
         background-size:
-          calc(100% - 28px) 100%,
-          calc(100% - 28px) auto;
+          95% 100%,
+          95% auto;
       }
 
       .staticrypt-content {
@@ -51,7 +51,7 @@ const lockScreenStyles = `
         max-width: none;
         margin: 0;
         padding: clamp(1.5rem, 4vw, 2.75rem);
-        border: 1px solid rgba(122, 130, 70, 0.34);
+        border: 1px solid rgba(255, 255, 255, 0.72);
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.9);
         box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
@@ -66,12 +66,12 @@ const lockScreenStyles = `
         height: 5px;
         margin: 0 auto 1.15rem;
         border-radius: 999px;
-        background: #7a8246;
+        background: #b74b67;
       }
 
       .staticrypt-title {
         margin: 0 0 0.7rem;
-        color: #55613a;
+        color: #111111;
         font-size: clamp(1.55rem, 4vw, 2.05rem);
         font-weight: 700;
         line-height: 1.14;
