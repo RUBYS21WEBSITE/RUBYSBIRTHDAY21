@@ -92,11 +92,6 @@ async function main() {
 
   const hydrated = structuredClone(content);
 
-  if (hydrated.heroImage) {
-    hydrated.heroImageData = await sanitizeAndEmbedImage(hydrated.heroImage, "hero");
-  }
-  delete hydrated.heroImage;
-
   for (const [index, memory] of hydrated.memories.entries()) {
     if (memory.image) {
       memory.imageData = await sanitizeAndEmbedImage(memory.image, index);
@@ -130,4 +125,3 @@ main().catch((error) => {
   console.error(`Build failed: ${error.message}`);
   process.exitCode = 1;
 });
-
