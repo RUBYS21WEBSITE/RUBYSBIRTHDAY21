@@ -26,8 +26,8 @@ const lockScreenStyles = `
         background-position: center 18%;
         background-repeat: no-repeat;
         background-size:
-          95% 100%,
-          95% auto;
+          90% 100%,
+          90% auto;
       }
 
       .staticrypt-content {
