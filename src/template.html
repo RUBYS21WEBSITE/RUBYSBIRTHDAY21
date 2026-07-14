@@ -131,16 +131,6 @@
       letter-spacing: -.065em;
       line-height: .88;
     }
-    .hero h1 em { color: var(--accent); font-weight: 400; }
-    .hero-line {
-      max-width: 38rem;
-      margin: 2rem 0 0;
-      color: var(--muted);
-      font-family: var(--serif);
-      font-size: clamp(1.1rem, 2vw, 1.45rem);
-      line-height: 1.55;
-    }
-
     section { position: relative; padding: clamp(5rem, 10vw, 9rem) 0; }
     .section-kicker {
       margin: 0 0 .8rem;
@@ -421,8 +411,7 @@
 
     <div class="hero-grid shell">
       <div class="hero-copy reveal">
-        <h1>Happy birthday, <em id="recipient"></em></h1>
-        <p class="hero-line" id="heroLine"></p>
+        <h1 id="heroTitle"></h1>
       </div>
     </div>
   </header>
@@ -520,8 +509,7 @@
     }
 
     document.title = `Happy birthday, ${content.recipient || "my love"}`;
-    text("recipient", content.recipient || "my love");
-    text("heroLine", content.heroLine);
+    text("heroTitle", content.heroTitle || `Happy birthday ${content.recipient || "my love"}`);
     text("letterTitle", content.letterTitle || "Before we rewind...");
     text("finalTitle", content.finalTitle);
     text("finalMessage", content.finalMessage);

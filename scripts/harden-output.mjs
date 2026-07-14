@@ -123,7 +123,7 @@ if (!encryptedPage.includes(normalizedPasswordRead)) {
 const sensitiveSamples = [
   content.recipient,
   content.from,
-  content.heroLine,
+  content.heroTitle,
   ...(content.letter ?? []),
   ...(content.memories ?? []).flatMap((memory) => [memory.title, memory.caption]),
   ...(content.reasons ?? []),
