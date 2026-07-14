@@ -19,12 +19,15 @@ const lockScreenStyles = `
     <style id="birthday-lock-screen">
       .staticrypt-body {
         min-height: 100%;
+        background-color: #55613a;
         background-image:
           linear-gradient(rgba(18, 12, 10, 0.2), rgba(18, 12, 10, 0.48)),
           url("data:image/jpeg;base64,${coverImage.toString("base64")}");
-        background-position: center 12%;
+        background-position: center 9%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:
+          calc(100% - 28px) 100%,
+          calc(100% - 28px) auto;
       }
 
       .staticrypt-content {
@@ -81,6 +84,7 @@ const lockScreenStyles = `
       @media (max-width: 700px) {
         .staticrypt-body {
           background-position: center 34%;
+          background-size: cover, cover;
         }
 
         .staticrypt-content {
