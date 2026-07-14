@@ -1,0 +1,6 @@
+.DS_Store
+.env
+.private/
+node_modules/
+npm-debug.log*
+

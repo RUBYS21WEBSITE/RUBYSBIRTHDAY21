@@ -1,0 +1,58 @@
+{
+  "recipient": "Her nickname",
+  "from": "Your nickname",
+  "birthday": "Her birthday",
+  "since": "2023-01-01",
+  "eyebrow": "A small corner of the internet, made only for you",
+  "heroLine": "Every version of life is better with you in it.",
+  "heroImage": "",
+  "letterTitle": "Before we rewind...",
+  "letter": [
+    "Happy birthday, my love. I wanted to make you something that could hold more than a card ever could.",
+    "This is our little museum: the loud moments, the quiet ones, and all the ordinary days that became special because they were with you."
+  ],
+  "memories": [
+    {
+      "date": "The beginning",
+      "title": "Where our story started",
+      "caption": "Write what you remember about this moment, including the tiny details only the two of you know.",
+      "image": ""
+    },
+    {
+      "date": "A favourite day",
+      "title": "The day we could not stop laughing",
+      "caption": "A short, specific story will feel much more personal than a general caption.",
+      "image": ""
+    },
+    {
+      "date": "Right now",
+      "title": "Still my favourite person",
+      "caption": "End the timeline with something recent and a thought about where you are together today.",
+      "image": ""
+    }
+  ],
+  "reasons": [
+    "You make ordinary days feel like an adventure.",
+    "You understand the things I do not always know how to say.",
+    "Your laugh can change the mood of an entire room.",
+    "You make me want to become a better version of myself.",
+    "You are the person I want to tell everything to.",
+    "Being with you feels like home."
+  ],
+  "future": [
+    "Take the trip we keep talking about",
+    "Find our new favourite restaurant",
+    "Watch a sunrise somewhere beautiful",
+    "Make a hundred more ordinary days special"
+  ],
+  "finalTitle": "My favourite memory is still the one we have not made yet.",
+  "finalMessage": "Happy birthday. I love you, and I cannot wait for everything that comes next.",
+  "song": "",
+  "theme": {
+    "accent": "#b74b67",
+    "accentDark": "#7c2943",
+    "paper": "#fff9f5",
+    "ink": "#30272a"
+  }
+}
+
