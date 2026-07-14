@@ -48,7 +48,7 @@ const lockScreenStyles = `
         max-width: none;
         margin: 0;
         padding: clamp(1.5rem, 4vw, 2.75rem);
-        border: 1px solid rgba(255, 255, 255, 0.58);
+        border: 1px solid rgba(122, 130, 70, 0.34);
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.9);
         box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
@@ -56,8 +56,19 @@ const lockScreenStyles = `
         -webkit-backdrop-filter: blur(12px);
       }
 
+      .staticrypt-form::before {
+        content: "";
+        display: block;
+        width: 52px;
+        height: 5px;
+        margin: 0 auto 1.15rem;
+        border-radius: 999px;
+        background: #7a8246;
+      }
+
       .staticrypt-title {
         margin: 0 0 0.7rem;
+        color: #55613a;
         font-size: clamp(1.55rem, 4vw, 2.05rem);
         font-weight: 700;
         line-height: 1.14;
