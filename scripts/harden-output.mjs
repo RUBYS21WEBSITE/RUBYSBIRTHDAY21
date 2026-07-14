@@ -23,7 +23,7 @@ const lockScreenStyles = `
         background-image:
           linear-gradient(rgba(18, 12, 10, 0.2), rgba(18, 12, 10, 0.48)),
           url("data:image/jpeg;base64,${coverImage.toString("base64")}");
-        background-position: center top;
+        background-position: center 18%;
         background-repeat: no-repeat;
         background-size:
           95% 100%,
