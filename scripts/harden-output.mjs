@@ -94,6 +94,17 @@ if (!encryptedPage.includes('id="birthday-lock-screen"')) {
   encryptedPage = encryptedPage.replace(/<\/head>/i, `${lockScreenStyles}\n  </head>`);
 }
 
+const exactPasswordRead = 'document.getElementById("staticrypt-password").value';
+const normalizedPasswordRead = `${exactPasswordRead}.toLowerCase()`;
+
+if (!encryptedPage.includes(normalizedPasswordRead)) {
+  if (!encryptedPage.includes(exactPasswordRead)) {
+    throw new Error("Could not enable case-insensitive password entry: password field lookup was not found.");
+  }
+
+  encryptedPage = encryptedPage.replace(exactPasswordRead, normalizedPasswordRead);
+}
+
 const sensitiveSamples = [
   content.recipient,
   content.from,

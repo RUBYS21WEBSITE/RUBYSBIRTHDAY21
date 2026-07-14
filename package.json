@@ -6,7 +6,7 @@
   "scripts": {
     "build:source": "node scripts/build-site.mjs",
     "preview": "npm run build:source && python3 -m http.server 4173 --directory .private/build",
-    "lock": "npm run build:source && staticrypt .private/build/index.html -d docs --config false --remember false --template-title \"Happy 21st birthday Ruby I hope you like it.\" --template-instructions \"Enter the secret from your birthday card\" --template-button \"Open your surprise\" --template-error \"That secret did not work - try again\" --template-color-primary \"#b74b67\" --template-color-secondary \"#fff7f4\" && node scripts/harden-output.mjs"
+    "lock": "npm run build:source && staticrypt .private/build/index.html -d docs --config false --remember false --short --template-title \"Happy 21st birthday Ruby I hope you like it.\" --template-instructions \"The password is the movie we watched on our first date\" --template-button \"Enter to continue\" --template-error \"That password did not work - try again\" --template-color-primary \"#b74b67\" --template-color-secondary \"#fff7f4\" && node scripts/harden-output.mjs"
   },
   "devDependencies": {
     "staticrypt": "^3.5.4"
